@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Text">
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:shadowRadius">3</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="fontFamily">serif</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#E8A86F</item>
+    </style>
+
+    <style name="Text.Stepcounter">
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:shadowRadius">3</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:gravity">center|top</item>
+        <item name="android:background">@drawable/bg_step_counter</item>
+    </style>
+
+    <style name="refreshButton">
+        <item name="android:layout_height">66dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">bottom|center</item>
+        <item name="android:layout_marginBottom">120dp</item>
+        <item name="android:background">@drawable/ic_baseline_refresh</item>
+    </style>
+
+    <style name="PuzzleButton">
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:shadowRadius">3</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:fontFamily">serif</item>
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:textColor">#E8A86F</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:background">@drawable/bg_butten_puzzle</item>
+    </style>
+
+    <style name="replyButton">
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:shadowRadius">3</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:elevation">2dp</item>
+        <item name="android:background">@drawable/ic_baseline_reply</item>
+    </style>
+
+    <style name="musicButton">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="menuView">
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:shadowRadius">3</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:fontFamily">serif</item>
+        <item name="android:textColor">#E8A86F</item>
+        <item name="android:layout_width">240dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:layout_gravity">top|center</item>
+        <item name="android:background">@drawable/menuview</item>
+    </style>
+
+    <style name="Text.Name">
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Text.Record">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:fontFamily">serif</item>
+    </style>
+
+</resources>

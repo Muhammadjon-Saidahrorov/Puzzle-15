@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Continue">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fon_game" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/replyButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="24dp"
+                android:background="@drawable/sorcle"
+                android:clickable="true"
+                android:elevation="14dp"
+                android:focusable="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                style="@style/replyButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="28dp"
+                android:elevation="2dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/moved"
+                style="@style/Text.Stepcounter"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="serif"
+                android:text="Moved:"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textStepCounter"
+                style="@style/Text.Stepcounter"
+                android:layout_marginStart="4dp"
+                android:fontFamily="serif"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/moved"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/musicButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/sorcle"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/musicButtonIcon"
+                style="@style/musicButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="28dp"
+                android:background="@drawable/ic_baseline_music_note"
+                android:elevation="2dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/musicoffButton"
+                style="@style/musicButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="28dp"
+                android:background="@drawable/ic_baseline_music_off"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Chronometer
+                android:id="@+id/chhronometer"
+                style="@style/Text.Stepcounter"
+                android:fontFamily="serif"
+                android:textSize="32sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/containerButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:gravity="top"
+        android:padding="4dp">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn1"
+            style="@style/PuzzleButton"
+            android:shadowColor="@color/black" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn2"
+            style="@style/PuzzleButton"
+            android:layout_toEndOf="@id/btn1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn3"
+            style="@style/PuzzleButton"
+            android:layout_toEndOf="@id/btn2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn4"
+            style="@style/PuzzleButton"
+            android:layout_toEndOf="@id/btn3" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn5"
+            style="@style/PuzzleButton"
+            android:layout_below="@id/btn1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn6"
+            style="@style/PuzzleButton"
+            android:layout_below="@id/btn2"
+            android:layout_toEndOf="@id/btn5" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn7"
+            style="@style/PuzzleButton"
+            android:layout_below="@id/btn3"
+            android:layout_toEndOf="@id/btn6" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn8"
+            style="@style/PuzzleButton"
+            android:layout_below="@id/btn4"
+            android:layout_toEndOf="@id/btn7" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn9"
+            style="@style/PuzzleButton"
+            android:layout_below="@id/btn5" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn10"
+            style="@style/PuzzleButton"
+            android:layout_below="@id/btn6"
+            android:layout_toEndOf="@id/btn9" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn11"
+            style="@style/PuzzleButton"
+            android:layout_below="@id/btn7"
+            android:layout_toEndOf="@id/btn10" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn12"
+            style="@style/PuzzleButton"
+            android:layout_below="@id/btn8"
+            android:layout_toEndOf="@id/btn11" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn13"
+            style="@style/PuzzleButton"
+            android:layout_below="@id/btn9" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn14"
+            style="@style/PuzzleButton"
+            android:layout_below="@id/btn10"
+            android:layout_toEndOf="@id/btn13" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn15"
+            style="@style/PuzzleButton"
+            android:layout_below="@id/btn11"
+            android:layout_toEndOf="@id/btn14" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn16"
+            style="@style/PuzzleButton"
+            android:layout_below="@id/btn12"
+            android:layout_toEndOf="@id/btn15" />
+
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/refreshButton"
+        style="@style/menuView"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="75dp"
+        android:text="RESTART"
+        android:textSize="20sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/pauseBnt"
+        style="@style/menuView"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="75dp"
+        android:text="PAUSE"
+        android:textSize="20sp" />
+
+</FrameLayout>

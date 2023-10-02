@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#039BE5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/puzzle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="PUZZLE 15"
+            android:shadowColor="@color/black"
+            android:shadowRadius="3"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:textColor="#E8A86F"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/arizonia"
+            android:gravity="center"
+            android:text="with\nDracula"
+            android:shadowColor="@color/black"
+            android:shadowRadius="3"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:textColor="#E8A86F"
+            android:textSize="24sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom|center"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/test"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:background="@drawable/test1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/continueButton"
+                style="@style/menuView"
+                android:elevation="8dp"
+                android:layout_width="230dp"
+                android:layout_height="30dp"
+                android:text="CONTINUE"
+                android:textSize="22sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/kirishButton"
+                style="@style/menuView"
+                android:elevation="8dp"
+                android:layout_width="230dp"
+                android:layout_height="30dp"
+                android:text="NEW GAME"
+                android:textSize="22sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/recordButton"
+                style="@style/menuView"
+                android:elevation="8dp"
+                android:layout_width="230dp"
+                android:layout_height="30dp"
+                android:text="RECORD"
+                android:textSize="22sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/infoButton"
+                style="@style/menuView"
+                android:elevation="8dp"
+                android:layout_width="230dp"
+                android:layout_height="30dp"
+                android:text="INFO"
+                android:textSize="22sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/exitButton"
+                style="@style/menuView"
+                android:elevation="8dp"
+                android:layout_width="230dp"
+                android:layout_height="30dp"
+                android:text="EXIT"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+

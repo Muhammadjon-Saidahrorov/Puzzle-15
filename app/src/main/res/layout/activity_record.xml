@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#039BE5"
+    android:weightSum="8"
+    tools:context=".RecordActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/replyButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="24dp"
+                android:background="@drawable/sorcle"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <LinearLayout
+                style="@style/replyButton"
+                android:layout_margin="28dp"
+                android:layout_height="42dp"
+                android:layout_width="42dp" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                style="@style/Text.Record"
+                android:text="TOP SCORES"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+
+                <TextView
+                    android:text="1: "
+                    style="@style/Text.Record"/>
+                <TextView
+                    android:text="2: "
+                    style="@style/Text.Record"/>
+                <TextView
+                    android:text="3: "
+                    style="@style/Text.Record"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+
+
+                <TextView
+                    android:id="@+id/score1"
+                    style="@style/Text.Record" />
+                <TextView
+                    android:id="@+id/score2"
+                    style="@style/Text.Record"/>
+                <TextView
+                    android:id="@+id/score3"
+                    style="@style/Text.Record"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/recordtest"
+        android:layout_weight="4"/>
+
+
+</LinearLayout>

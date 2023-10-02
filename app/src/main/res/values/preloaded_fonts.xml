@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/alata</item>
+        <item>@font/alex_brush</item>
+        <item>@font/amarante</item>
+        <item>@font/architects_daughter</item>
+        <item>@font/archivo_semibold</item>
+        <item>@font/arizonia</item>
+    </array>
+</resources>

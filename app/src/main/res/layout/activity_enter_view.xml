@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#039BE5"
+    android:orientation="vertical"
+    tools:context=".EnterView">
+
+    <TextView
+        android:id="@+id/puzzle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="serif"
+        android:shadowColor="@color/black"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="3"
+        android:text="PUZZLE 15"
+        android:textColor="#E8A86F"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arizonia"
+        android:gravity="center"
+        android:shadowColor="@color/black"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="3"
+        android:text="with\nDracula"
+        android:textColor="#E8A86F"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/puzzle" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/test"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/continueButton"
+            style="@style/menuView"
+            android:text="CONTINUE"
+            tools:visibility="gone" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/kirishButton"
+            style="@style/menuView"
+            android:text="NEW GAME" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/recordButton"
+            style="@style/menuView"
+            android:text="RECORD" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/infoButton"
+            style="@style/menuView"
+            android:text="INFO" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/exitButton"
+            style="@style/menuView"
+            android:text="EXIT" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/test"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:background="@drawable/test1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
